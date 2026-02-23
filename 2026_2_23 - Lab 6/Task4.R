@@ -13,10 +13,12 @@ user.newdata <- data.frame(
   attempts = 1,
   qualify = "yes"
 )
-
 user.finaldata <- rbind(updated_user.data, user.newdata)
+
+user.finaldata$qualify <- as.factor(user.finaldata$qualify)
+
 print(str(user.finaldata))
 print(summary(user.finaldata))
-print(nrow(user.finaldata))
-print(ncol(user.finaldata))
+cat("Number of row: ", nrow(user.finaldata), "\n")
+cat("Number of column: ", ncol(user.finaldata))
 
