@@ -6,7 +6,7 @@ library(readr)
 #Read all lines from uncleaned dataset
 row_data <- read_lines("Unclean Dataset.csv")
 
-#
+#Replace comma, hidden spaces 
 fixed_lines <- row_data %>%
   str_replace_all("\\|", ",") %>%
   str_remove_all(",+\\s*$")
