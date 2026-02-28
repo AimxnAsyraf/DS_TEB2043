@@ -45,7 +45,7 @@ for(i in 1:nrow(Matrix_1)) {
     divide_matrix[i, j] <- Matrix_1[i, j] / Matrix_2[i, j]
   }
 }
-print(divide_matrix)
+# print(divide_matrix)
 
 
 
