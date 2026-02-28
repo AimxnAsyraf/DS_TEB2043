@@ -3,7 +3,7 @@ age = c(55, 57, 56, 52, 51, 59, 58, 53, 59, 55, 60, 60, 60, 60, 52, 55, 56, 51,
         51, 50, 57, 58)
 
 age_factor <- factor(age)
-print(levels(age_factor))
+# print(levels(age_factor))
 
 age_table <- table(age_factor)
 # print(age_table)
@@ -18,5 +18,6 @@ age_range <- cut(age,
                  include.lowest = TRUE)
 
 staff_age_range <- table(age_range)
-# print(staff_age_range)
-range_of_staff_age <- data.frame()
+#print(staff_age_range)
+range_of_staff_age <- data.frame(staff_age_range)
+print(range_of_staff_age)
